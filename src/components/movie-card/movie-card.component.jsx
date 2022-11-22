@@ -26,16 +26,20 @@ export default function MovieCard({ movie }) {
       height: '23%',
       padding: '10px',
       [theme.breakpoints.down('lg')]: {
-        fontSize: '.8rem',
+        fontSize: '.9rem',
         height: '26%',
       },
       [theme.breakpoints.up('lg')]: {
-        fontSize: '1rem',
+        fontSize: '.95rem',
         height: '28%',
       },
-      [theme.breakpoints.down('md')]: {
+      [theme.breakpoints.down('sm')]: {
         fontSize: '.9rem',
-        height: '26%',
+        height: '34%',
+      },
+      [theme.breakpoints.up('md')]: {
+        fontSize: '.9rem',
+        height: '20%',
       },
     },
     cardLanguage: {
@@ -43,15 +47,24 @@ export default function MovieCard({ movie }) {
       top: 15,
       right: 15,
       backgroundColor: 'white',
-      width: '.8em',
-      height: '.7em',
-      padding: '.6em',
+      // width: '.8em',
+      // height: '.7em',
+      padding: '.2em',
       borderRadius: '5px',
       color: 'black',
       fontWeight: 'bold',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
+      [theme.breakpoints.down('lg')]: {
+        fontSize: '.7rem',
+      },
+      [theme.breakpoints.up('lg')]: {
+        fontSize: '.8rem',
+      },
+      [theme.breakpoints.down('md')]: {
+        fontSize: '.7rem',
+      },
     },
     cardYear: {
       position: 'absolute',

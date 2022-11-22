@@ -13,12 +13,12 @@ export default function InputButton() {
     !moviesFilteredFirst[0]
       ? console.log('hi')
       : setButtonSaveState((saveButton) => true)
-  const buttonIcon = !moviesFilteredFirst[0] ? (
+  const buttonIcon = !movieNames ? (
     <UploadRoundedIcon fontSize="large" />
   ) : (
     <SaveRoundedIcon fontSize="large" />
   )
-  const buttonText = !moviesFilteredFirst[0] ? 'Upload' : 'Save'
+  const buttonText = !movieNames ? 'Upload' : 'Save'
 
   return (
     <Button

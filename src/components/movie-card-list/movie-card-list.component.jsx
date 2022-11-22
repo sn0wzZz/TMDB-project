@@ -5,6 +5,7 @@ import { useContext } from 'react'
 import { AppContext } from '../../contexts/app.context'
 import SmartToyIcon from '@mui/icons-material/SmartToy'
 import axios from 'axios'
+import InputForm from '../input-form/input-form.component'
 
 export default function MovieCardList() {
   const {
@@ -24,12 +25,13 @@ export default function MovieCardList() {
             ? "Hmm seems like you haven't uploaded a file yet..."
             : "You've got some data! Select a title from the list and I'll display it here for you! "}
         </p>
+        {!movieNames? <InputForm /> : ''}
       </Box>
     )
 
   return (
-    <Container>
-      <Grid2 container columnSpacing={2} rowSpacing={3} marginBlock={3}>
+    <Container sx={{minHeight:'100vh'}}>
+      <Grid2 container rowSpacing={4} marginTop={2} marginBottom={7} marginInline={0}>
         {moviesFilteredFirst[0] &&
           moviesFilteredFirst.map((movieName) =>
             movies.map((movieData) => {
