@@ -62,6 +62,7 @@ const styles = {
     boxSizing: 'border-box',
     width: '100%',
     height: '90%',
+    zIndex: 999,
     paddingInline: '1vw',
     '&& .Mui-selected, && .Mui-selected:hover': {
       bgcolor: 'darkcyan',

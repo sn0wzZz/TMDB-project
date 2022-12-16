@@ -13,7 +13,6 @@ export default function MainContainer() {
       <Box>
         <Grid2 container bgcolor={'#0f0f0f'}>
           <Grid2 item xs={12} sm={4} md={4} lg={3}>
-            {/* <SideBar /> */}
             {width > 600 ? <SideBar /> : <MovieList />}
           </Grid2>
           <Grid2

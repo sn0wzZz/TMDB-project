@@ -5,7 +5,7 @@ export default function SidebarAlert(){
     <Box sx={styles.listAlert}>
       <p style={{ marginInline: 30, textAlign: 'center'}}>
         Please upload a file containing movie titles by clicking the{' '}
-        <strong>Uplodad</strong> button!
+        <strong>Upload</strong> button!
       </p>
     </Box>
   )
